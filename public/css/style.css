@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+}
+
+.btn-yellow {
+    background-color: #fce011;
+    border:  0 !important;
+    border-radius: 4px;
+    padding: 0.3% 2%;
+    font-weight: 600;
+    width: 40% !important;
+    transition: 0.3s;
+}
+
+.btn-yellow:hover {
+    background-color: #000;
+    color: #fce011;
+}
+
+/* Homepage */
+.body-homepage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-homepage {
+    margin-top: -18%;
+    width: 100%;
+}
+
+.main-homepage {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main-homepage nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-homepage nav .nav-name-logo {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #fce011;
+    width: 30%;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.main-homepage nav .nav-name-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    width: 60%;
+    padding-left: 0;
+    cursor: pointer;
+    padding-right: 7%;
+}
+
+.main-homepage nav .nav-name-menu li:hover {
+    color: #fce011;
+}
+
+.main-homepage h1 {
+    color: #fce011;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.main-homepage h2 {
+    color: #FFF;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.main-homepage h3 {
+    color: #000;
+    font-size: 1.2vw;
+    text-align: center;
+    background-color: #fce011;
+    width: 14%;
+    padding: 1vw 0;
+    margin-top: 2%;
+}
+
+.main-homepage .place-jadwal {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    background-color: rgba(115, 116, 110, 0.5);
+    height: 5.7vw;
+    padding: 2% 0;
+    color: #FFF;
+    margin-top: -2%;
+    margin-bottom: 2%;
+}
+
+.main-homepage .place-jadwal p {
+    width: 50%;
+}
+
+.main-homepage button {
+    background-color: #fce011;
+    border:  0;
+    border-radius: 4px;
+    padding: 0.5% 2%;
+    margin-top: 2%;
+}
+
+.main-homepage button:hover {
+    background-color: #99880a;
+}
+
+/* Login */
+.main-login {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.main-login .place-form-login {
+    width: 40%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 3%;
+    border: 2px solid #fce011;
+}
+
+.main-login .place-form-login h1 {
+    color: #fce011;
+    font-weight: 600;
+    font-size: 2vw;
+    text-align: left;
+    border-bottom: 2px solid #fce011;
+    width: 26%;
+}
+
+.main-login .place-form-login input {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 3%;
+    width: 100%;
+    margin-top: 9%;
+}
+
+.main-login .title-form-login h1 {
+    color: #fce011;
+    font-weight: 600;
+    font-size: 5vw;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.main-login .title-form-login p {
+    color: #FFF;
+    font-size: 1.5vw;
+    padding-left: 10%;
+    font-weight: 600;
+}
