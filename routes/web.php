@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', 'BaseController@index');
+Route::get('/main', 'BaseController@main');
 
 
 Auth::routes();

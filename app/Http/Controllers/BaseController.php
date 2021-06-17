@@ -15,7 +15,7 @@ class BaseController extends Controller
         return view('login.index');
     }
 
-    public function cp(){
-        return view('main.cp');
+    public function main(){
+        return view('main.index');
     }
 }

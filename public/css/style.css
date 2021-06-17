@@ -2,6 +2,16 @@ body {
     margin: 0;
 }
 
+.title-logo {
+    color: #fce011 !important;
+    font-weight: 700 !important;
+}
+
+.br-yellow {
+    border: 2px solid #fce011;
+    border-radius: 6px;
+}
+
 .btn-yellow {
     background-color: #fce011;
     border:  0 !important;
@@ -68,6 +78,7 @@ body {
 
 .main-homepage nav .nav-name-menu li:hover {
     color: #fce011;
+    font-weight: 700;
 }
 
 .main-homepage h1 {
@@ -91,18 +102,20 @@ body {
     width: 14%;
     padding: 1vw 0;
     margin-top: 2%;
+    z-index: 5;
 }
 
 .main-homepage .place-jadwal {
     width: 50%;
     text-align: center;
     display: flex;
-    background-color: rgba(115, 116, 110, 0.5);
+    background-color: rgba(237, 253, 6, 0.5);
     height: 5.7vw;
     padding: 2% 0;
     color: #FFF;
     margin-top: -2%;
     margin-bottom: 2%;
+    z-index: -1;
 }
 
 .main-homepage .place-jadwal p {
@@ -115,10 +128,13 @@ body {
     border-radius: 4px;
     padding: 0.5% 2%;
     margin-top: 2%;
+    font-weight: 700;
+    color: #000;
 }
 
 .main-homepage button:hover {
-    background-color: #99880a;
+    background-color: #000;
+    color: #fce011;
 }
 
 /* Login */
@@ -166,4 +182,48 @@ body {
     font-size: 1.5vw;
     padding-left: 10%;
     font-weight: 600;
+}
+
+/* Main */
+.menu-select a {
+    font-weight: 700;
+}
+
+.menu-select a:hover {
+    color: #fce011 !important;
+    text-decoration: none !important;
+}
+
+.menu-select-active {
+    color: #fce011 !important;
+    text-decoration: none !important;
+}
+
+.menu-category .place-menu-category {
+    border-radius: 6px;
+    transition: 0.3s;
+    border: 2px solid #000;
+}
+
+.menu-category .place-menu-category:hover {
+    box-shadow: -1px 3px 45px -14px rgba(0,0,0,0.56);
+    -webkit-box-shadow: -1px 3px 45px -14px rgba(0,0,0,0.56);
+    -moz-box-shadow: -1px 3px 45px -14px rgba(0,0,0,0.56);
+    transition: 0.3s;
+    border: none;
+}
+
+.desc-place-map {
+    background-color: #fce011;
+    width: 700px;
+    height: 360px;
+    padding: 4%;
+    border-radius: 10px;
+    margin-left: -4%;
+    margin-top: 3%;
+}
+
+.desc-place-map h1 {
+    font-weight: 700;
+    color: #000;
 }
