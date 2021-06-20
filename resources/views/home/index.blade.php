@@ -18,7 +18,7 @@
                 <li>HOME</li>
                 <li>SERVIS</li>
                 <li>DAFTAR ANTRIAN</li>
-                <li>JADWAL SEKARANG</li>
+                <li>PESAN JADWAL</li>
             </ul>
         </nav>
 

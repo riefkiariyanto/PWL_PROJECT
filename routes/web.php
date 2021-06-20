@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Route::get('/', 'BaseController@index');
 Route::get('/main', 'BaseController@main');
+Route::get('/order', 'BaseController@list_order');
+Route::get('/order_service', 'BaseController@form_service');
 
 
 Auth::routes();

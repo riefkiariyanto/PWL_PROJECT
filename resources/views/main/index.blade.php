@@ -6,13 +6,13 @@
 
 @section('content')
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom shadow-sm" style="background-color: #151515;">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom shadow-sm fixed-top" style="background-color: #151515;">
         <h5 class="my-0 mr-md-auto font-weight-normal text-light title-logo">S.Mot</h5>
         <nav class="my-2 my-md-0 mr-md-3 menu-select">
             <a class="p-2 text-light" href="#">HOME</a>
             <a class="p-2 text-light" href="#">SERVIS</a>
             <a class="p-2 text-light" href="#">DAFTAR ANTRIAN</a>
-            <a class="p-2 text-light" href="#">JADWAL SEKARANG</a>
+            <a class="p-2 text-light" href="#">PESAN JADWAL</a>
         </nav>
         <a class="btn btn-outline-primary" href="#">Sign up</a>
     </div>

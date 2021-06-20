@@ -9,7 +9,15 @@ body {
 
 .br-yellow {
     border: 2px solid #fce011;
-    border-radius: 6px;
+}
+
+.thead-yellow {
+    background-color: #fce011;
+    border-radius: 10px !important;
+}
+
+.text-yellow {
+    color: #fce011;
 }
 
 .btn-yellow {

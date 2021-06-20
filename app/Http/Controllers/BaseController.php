@@ -18,4 +18,12 @@ class BaseController extends Controller
     public function main(){
         return view('main.index');
     }
+
+    public function list_order(){
+        return view('list_order.index');
+    }
+
+    public function form_service(){
+        return view('form_service.index');
+    }
 }
