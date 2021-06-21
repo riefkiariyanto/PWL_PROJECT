@@ -14,6 +14,7 @@
             <a class="p-2 text-light" href="/order">DAFTAR ANTRIAN</a>
             <a class="p-2 text-light menu-select-active" href="/order_service">PESAN JADWAL</a>
         </nav>
+        <a href="/logout"><button type="button" class="btn btn-outline-danger">Logout</button></a>
     </div>
 
     <div id="myCarousel" class=" slide" data-ride="carousel">

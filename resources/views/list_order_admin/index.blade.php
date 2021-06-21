@@ -12,6 +12,7 @@
             <a class="p-2 text-light" href="/add_product">TAMBAH LAYANAN</a>
             <a class="p-2 text-light menu-select-active" href="/list">DAFTAR ANTRIAN</a>
         </nav>
+        <a href="/logout"><button type="button" class="btn btn-outline-danger">Logout</button></a>
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center mb-5 mt-5 border-bottom">

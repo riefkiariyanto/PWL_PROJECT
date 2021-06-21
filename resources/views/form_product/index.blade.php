@@ -12,6 +12,8 @@
             <a class="p-2 text-light menu-select-active" href="/add_product">TAMBAH LAYANAN</a>
             <a class="p-2 text-light" href="/list">DAFTAR ANTRIAN</a>
         </nav>
+
+        <a href="/logout"><button type="button" class="btn btn-outline-danger">Logout</button></a>
     </div>
 
     <div id="myCarousel" class=" slide" data-ride="carousel">
