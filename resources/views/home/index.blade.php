@@ -9,18 +9,6 @@
     <img class="bg-homepage" src="/img/Background-Homepage.svg" alt="">
 
     <div class="main-homepage" align="center">
-        <nav>
-            <ul class="nav-name-logo">
-                <li>S.Mot</li>
-            </ul>
-
-            <ul class="nav-name-menu">
-                <li>HOME</li>
-                <li>SERVIS</li>
-                <li>DAFTAR ANTRIAN</li>
-                <li>PESAN JADWAL</li>
-            </ul>
-        </nav>
 
         <h1>MOTORCYCLE REPAIR SERVICE</h1>
         <h2>Service Motor Terpercaya No 1 Di Indonesia</h2>
@@ -35,7 +23,7 @@
         <h2>Jadwalkan motor Anda untuk diservis sekarang juga.</h2>
 
         <button>
-            JADWAL
+            <a href="/login">Login</a>
         </button>
     </div>
 </body>

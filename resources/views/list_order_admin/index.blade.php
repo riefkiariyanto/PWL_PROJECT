@@ -9,10 +9,8 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom shadow-sm fixed-top" style="background-color: #151515;">
         <h5 class="my-0 mr-md-auto font-weight-normal text-light title-logo">S.Mot</h5>
         <nav class="my-2 my-md-0 mr-md-3 menu-select">
-            <a class="p-2 text-light" href="/main">HOME</a>
-            <a class="p-2 text-light" href="/service?product=Rem">SERVIS</a>
-            <a class="p-2 text-light menu-select-active" href="/order">DAFTAR ANTRIAN</a>
-            <a class="p-2 text-light" href="/order_service">PESAN JADWAL</a>
+            <a class="p-2 text-light" href="/add_product">TAMBAH LAYANAN</a>
+            <a class="p-2 text-light menu-select-active" href="/list">DAFTAR ANTRIAN</a>
         </nav>
     </div>
 

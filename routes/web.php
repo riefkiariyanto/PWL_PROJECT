@@ -13,15 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('admin-page', function() {
+    return redirect('/add_product');
+})->middleware('role:admin')->name('admin.page');
 
+Route::get('user-page', function() {
+    return redirect('/main');
+})->middleware('role:user')->name('user.page');
 Route::get('/', 'BaseController@index');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/main', 'BaseController@main');
 Route::get('/order', 'BaseController@list_order');
+Route::get('/service', 'BaseController@service');
 Route::get('/order_service', 'BaseController@form_service');
-
+Route::post('/input_order_service', 'BaseController@input_order');
+Route::get('/add_product', 'BaseController@form_product');
+Route::post('/input_product', 'BaseController@store');
+Route::get('/list', 'BaseController@admin_order');
 
 Auth::routes();
 

@@ -9,12 +9,11 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom shadow-sm fixed-top" style="background-color: #151515;">
         <h5 class="my-0 mr-md-auto font-weight-normal text-light title-logo">S.Mot</h5>
         <nav class="my-2 my-md-0 mr-md-3 menu-select">
-            <a class="p-2 text-light" href="#">HOME</a>
-            <a class="p-2 text-light" href="#">SERVIS</a>
-            <a class="p-2 text-light" href="#">DAFTAR ANTRIAN</a>
-            <a class="p-2 text-light" href="#">PESAN JADWAL</a>
+            <a class="p-2 text-light menu-select-active" href="/main">HOME</a>
+            <a class="p-2 text-light" href="/service?product=Rem">SERVIS</a>
+            <a class="p-2 text-light" href="/order">DAFTAR ANTRIAN</a>
+            <a class="p-2 text-light" href="/order_service">PESAN JADWAL</a>
         </nav>
-        <a class="btn btn-outline-primary" href="#">Sign up</a>
     </div>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -31,7 +30,6 @@
             <div class="carousel-caption text-left">
                 <h1>Example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
             </div>
         </div>
@@ -74,73 +72,16 @@
         <div class="card-deck mb-3 text-center">
             <div class="col-md-12" style="justify-content: space-between !important;">
                 <div class="row">
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Bahan Bakar</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Rem</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Roda/Ban</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Body</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Lampu</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Mesin</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Sparepart</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3" style="cursor: pointer;">
-                        <a class="menu-category text-decoration-none" href="">
-                            <div class="place-menu-category col-md-12 pt-4 pb-3">
-                                <img src="/img/Waste.svg" alt="" style="width: 15%;">
-                                <h3 class="mt-4 text-decoration-none text-bold text-dark">Servis Lengkap</h3>
-                            </div>
-                        </a>
-                    </div>
+                    @foreach($category as $value_category)
+                        <div class="col-md-3" style="cursor: pointer;">
+                            <a class="menu-category text-decoration-none" href="/service?product={{$value_category->category}}">
+                                <div class="place-menu-category col-md-12 pt-4 pb-3">
+                                    <img src="/img/Waste.svg" alt="" style="width: 15%;">
+                                    <h3 class="mt-4 text-decoration-none text-bold text-dark">{{$value_category->category}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
