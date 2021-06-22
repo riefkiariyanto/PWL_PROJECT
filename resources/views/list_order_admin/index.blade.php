@@ -32,6 +32,7 @@
                             <th scope="col">Servis</th>
                             <th scope="col">Tanggal</th>
                             <th scope="col">Waktu</th>
+                            <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -42,6 +43,13 @@
                                     <td>{{$value_order->category_service}}</td>
                                     <td>{{$value_order->date}}</td>
                                     <td>{{$value_order->time}}</td>
+                                    <td>
+                                        <a href="/delete?id={{$value_order->id_order}}">
+                                            <button class="btn btn-danger pt-1 pb-1" style="font-size: 10px;">
+                                                Hapus
+                                            </button>
+                                        </a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

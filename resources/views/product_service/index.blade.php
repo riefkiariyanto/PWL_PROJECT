@@ -11,9 +11,12 @@
         <nav class="my-2 my-md-0 mr-md-3 menu-select">
             <a class="p-2 text-light" href="/main">HOME</a>
             <a class="p-2 text-light menu-select-active" href="/service?product=Rem">SERVIS</a>
+            <a class="p-2 text-light" href="/buy_sparepart">BELI SPAREPART</a>
             <a class="p-2 text-light" href="/order">DAFTAR ANTRIAN</a>
+            <a class="p-2 text-light" href="/buying">DAFTAR PEMBELIAN</a>
             <a class="p-2 text-light" href="/order_service">PESAN JADWAL</a>
         </nav>
+        <a href="/logout"><button type="button" class="btn btn-outline-danger">Logout</button></a>
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center mb-5 mt-5 border-bottom">

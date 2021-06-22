@@ -1,7 +1,7 @@
 @extends('template.layout')
 
 @section('title')
-    List Order
+    List Buying Sparepart
 @endsection
 
 @section('content')
@@ -12,16 +12,16 @@
             <a class="p-2 text-light" href="/main">HOME</a>
             <a class="p-2 text-light" href="/service?product=Rem">SERVIS</a>
             <a class="p-2 text-light" href="/buy_sparepart">BELI SPAREPART</a>
-            <a class="p-2 text-light menu-select-active" href="/order">DAFTAR ANTRIAN</a>
-            <a class="p-2 text-light" href="/buying">DAFTAR PEMBELIAN</a>
+            <a class="p-2 text-light" href="/order">DAFTAR ANTRIAN</a>
+            <a class="p-2 text-light menu-select-active" href="/buying">DAFTAR PEMBELIAN</a>
             <a class="p-2 text-light" href="/order_service">PESAN JADWAL</a>
         </nav>
         <a href="/logout"><button type="button" class="btn btn-outline-danger">Logout</button></a>
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center mb-5 mt-5 border-bottom">
-        <h1 class="display-4">DAFTAR ANTRIAN</h1>
-        <h5>Lihat daftar antrian Anda. Pastikan datang tepat waktu :)</h5>
+        <h1 class="display-4">DAFTAR PEMBELI</h1>
+        <h5>Lihat list pembelian anda, dan download PDF dan tunjukan ke bengkel.</h5>
     </div>
 
     <div class="container">
@@ -33,24 +33,24 @@
                             <tr>
                             <th scope="col">No</th>
                             <th scope="col">Nama Customer</th>
-                            <th scope="col">Servis</th>
-                            <th scope="col">Tanggal</th>
-                            <th scope="col">Waktu</th>
+                            <th scope="col">Barang</th>
+                            <th scope="col">Jumlah Barang</th>
+                            <th scope="col">Deskripsi</th>
                             <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($order as $value_order)
+                            @foreach($sparepart as $value_sparepart)
                                 <tr>
-                                    <th scope="row">{{$value_order->id_order}}</th>
-                                    <td>{{$value_order->name}}</td>
-                                    <td>{{$value_order->category_service}}</td>
-                                    <td>{{$value_order->date}}</td>
-                                    <td>{{$value_order->time}}</td>
+                                    <th scope="row">{{$value_sparepart->id_sparepart}}</th>
+                                    <td>{{$value_sparepart->name}}</td>
+                                    <td>{{$value_sparepart->object}}</td>
+                                    <td>{{$value_sparepart->amount}}</td>
+                                    <td>{{$value_sparepart->description}}</td>
                                     <td>
-                                        <a href="/detail?id={{$value_order->id_order}}">
+                                        <a href="/details?id={{$value_sparepart->id_sparepart}}">
                                             <button class="btn btn-dark pt-1 pb-1" style="font-size: 10px;">
-                                                Detail Pesanan
+                                                Detail Pembelian
                                             </button>
                                         </a>
                                     </td>

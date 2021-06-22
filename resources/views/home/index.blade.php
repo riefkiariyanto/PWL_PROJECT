@@ -22,9 +22,11 @@
 
         <h2>Jadwalkan motor Anda untuk diservis sekarang juga.</h2>
 
-        <button>
-            <a href="/login">Login</a>
-        </button>
+        <a href="/login">
+            <button>
+                Login
+            </button>
+        </a>
     </div>
 </body>
 @endsection

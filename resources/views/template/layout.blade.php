@@ -16,8 +16,15 @@
 
     <!-- Script -->
     <script src="/js/app.js"></script>
+
+    <!-- Datatables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 </head>
 
 @yield('content')
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/datatables.min.js"></script>
+    <script src="/js/main.js"></script>
 </html>
 

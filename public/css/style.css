@@ -34,6 +34,21 @@ body {
     transition: 0.3s;
 }
 
+.buttons-pdf {
+    border: 0 !important;
+    background-color: #151515;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 1% 4%;
+}
+
+.buttons-pdf:hover {
+    border: 0 !important;
+    background-color: #fce011;
+    color: #151515;
+    border-radius: 6px;
+    padding: 1% 4%;
+}
 
 .btn-yellow:hover {
     background-color: #000;
