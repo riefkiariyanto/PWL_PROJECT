@@ -19,6 +19,8 @@
                 <button style="width: 100% !important; padding: 2% 2%; margin-top: 5%" type="submit" class="btn-yellow">
                     {{ __('Login') }}
                 </button>
+
+                <a href="/register">Register</a>
             </form>
         </div>
     </div>

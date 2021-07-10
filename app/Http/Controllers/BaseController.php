@@ -95,7 +95,7 @@ class BaseController extends Controller
         $size = $request->file('img')->getSize();
         $name = $request->file('img')->getClientOriginalName();
 
-        $request->file('img')->storeAs('../../public/img/', $name);
+        $request->file('img')->storeAs('public/img/', $name);
 
         $query = DB::table('service')->insert([
             'id_service'=>$request->input('NULL'),
@@ -112,5 +112,60 @@ class BaseController extends Controller
         $order = DB::table('list_order')->get();
 
         return view('list_order_admin.index', ['order' => $order]);
+    }
+
+    public function detail(){
+        $param = $_GET['id'];
+        $order = DB::table('list_order');
+        $order->where('id_order', '=', $param);
+        $result_order = $order->get();
+
+        return view('detail_order.index', ['order' => $result_order]);
+    }
+
+    public function delete(){
+        $param = $_GET['id'];
+
+        $order = DB::table('list_order');
+        $order->where('id_order', '=', $param);
+        $result_order = $order->delete();
+
+        return redirect()->back();
+    }
+
+    public function sparepart(){
+        $category = DB::table('category')->get();
+
+        return view('form_sparepart.index', ['category' => $category]);
+    }
+
+    public function buy_sparepart(Request $request){
+        $query = DB::table('buy_sparepart')->insert([
+            'id_sparepart'=>$request->input('NULL'),
+            'name'=>$request->input('name'),
+            'email'=>$request->input('email'),
+            'no_telp'=>$request->input('telp'),
+            'amount'=>$request->input('amount'),
+            'object'=>$request->input('object'),
+            'description'=>$request->input('desc')
+        ]);
+        $sparepart = DB::table('buy_sparepart')->get();
+
+        return view('list_buying.index', ['sparepart' => $sparepart]);
+    }
+
+    public function buying(){
+        $sparepart = DB::table('buy_sparepart')->get();
+
+        return view('list_buying.index', ['sparepart' => $sparepart]);
+    }
+
+    public function details(){
+        $param = $_GET['id'];
+        $sparepart = DB::table('buy_sparepart');
+        $sparepart->where('id_sparepart', '=', $param);
+        $result_sparepart = $sparepart->get();
+
+        return view('detail_buying.index', ['sparepart' => $result_sparepart]);
     }
 }

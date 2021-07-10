@@ -30,6 +30,12 @@ Route::post('/input_order_service', 'BaseController@input_order');
 Route::get('/add_product', 'BaseController@form_product');
 Route::post('/input_product', 'BaseController@store');
 Route::get('/list', 'BaseController@admin_order');
+Route::get('/detail', 'BaseController@detail');
+Route::get('/delete', 'BaseController@delete');
+Route::get('/buy_sparepart', 'BaseController@sparepart');
+Route::post('/input_sparepart', 'BaseController@buy_sparepart');
+Route::get('/buying', 'BaseController@buying');
+Route::get('/details', 'BaseController@details');
 
 Auth::routes();
 
