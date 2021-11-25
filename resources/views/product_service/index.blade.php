@@ -42,7 +42,7 @@
                         @foreach($service as $value_service)
                             <div class="col-md-4 p-3">
                                 <div class="service-place" style="background-image: url('/storage/app/public/img/1.jpg');">
-                                <img src="/storage/app/public/img/1.jpg" alt="">
+                                <img src="{{ asset('img/'.$value_service->image) }}" alt="" width="100px">
                                     <h1 class="price-service"><strong>Rp. {{$value_service->price}}</strong></h1>
                                     <h1 class="title-service text-truncate"><strong>{{$value_service->service_name}}</strong></h1>
                                     <h1 class="desc-service text-break mt-3"><strong>{{$value_service->description}}</strong></h1>

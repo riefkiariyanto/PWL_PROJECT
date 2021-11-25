@@ -94,8 +94,8 @@ class BaseController extends Controller
     public function store(Request $request){
         $size = $request->file('img')->getSize();
         $name = $request->file('img')->getClientOriginalName();
-
-        $request->file('img')->storeAs('public/img/', $name);
+        $request->img->move(public_path('img'), $name);
+        // $request->file('img')->storeAs('public/img/', $name);
 
         $query = DB::table('service')->insert([
             'id_service'=>$request->input('NULL'),
